@@ -25,6 +25,9 @@ void setup()
 {
   Serial.begin(9600);
   Wire.begin();
+  // options: BMA250_range_16g, BMA250_range_8g, BMA250_range_4g, BMA250_range_2g
+  // options: BMA250_update_time_64ms, BMA250_update_time_32ms, BMA250_update_time_16ms, BMA250_update_time_8ms, BMA250_update_time_4ms, BMA250_update_time_2ms, BMA250_update_time_1ms, BMA250_update_time_05ms
+  // question: the BMA250 spec sheet says frequency
   accel.begin(BMA250_range_2g, BMA250_update_time_64ms);  //This sets up the BMA250 accelerometer
   RTC.start(); // ensure RTC oscillator is running, if not already
   pinMode(SDpin,OUTPUT);  // set up SD card
@@ -74,3 +77,4 @@ void loop()
 
   delay(100);  //We'll make sure we're over the 64ms update time set on the BMA250
 }
+
