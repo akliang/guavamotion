@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>cvCard Documentation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="cvCard Documentation">
+<meta name="author" content="Pixelwars">
+
+<!-- styles -->
+<link href='http://fonts.googleapis.com/css?family=Arbutus+Slab|Lora:400,700|Rokkitt:700' rel='stylesheet' type='text/css'>
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="assets/css/docs.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="assets/css/pixelwars.css">
+<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- fav -->
+<link rel="shortcut icon" href="assets/ico/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+<!-- Subhead
+    ================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>cvCard Documentation</h1>
+    <p class="lead">Overview of the template, its contents, and how to get started with the template.</p>
+  </div>
+</header>
+<!-- Subhead
+    ================================================== --> 
+
+<!-- CONTAINER -->
+<div class="container"> 
+  <!-- ROW -->
+  <div class="row"> 
+    
+    <!-- Docs nav
+      ================================================== -->
+    <div class="span3 bs-docs-sidebar">
+      <ul class="nav nav-list bs-docs-sidenav">
+        <li><a href="#introduction">Introduction</a></li>
+        <li class="dropdown"><a href="#getting-started">Getting Started</a>
+          <ul class="nav nav-list sub-nav">
+            <li><a href="#file-structure">File Structure</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#html">HTML</a>
+          <ul class="nav nav-list sub-nav">
+            <li><a href="#head">Head</a></li>
+            <li><a href="#layout">Layout</a></li>
+            <li><a href="#grid">Grid</a></li>
+            <li><a href="#icons">Icons</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#portfolio-single">Portfolio Single</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#single-page">Single Page</a></li>
+            <li><a href="#blog-page">Blog Page</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#css">CSS</a></li>
+        <li class="dropdown"><a href="#javascript">Javascript</a> </li>
+        <li class="dropdown"><a href="#customization">Customization</a>
+          <ul class="nav nav-list sub-nav">
+            <li><a href="#html-data-attr">Html Data Attributes</a></li>
+            <li><a href="#css-skins">CSS Skins</a></li>
+            <li><a href="#custom-css">Custom CSS</a></li>
+            <li><a href="#fonts">Fonts</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#credits">Credits</a></li>
+      </ul>
+    </div>
+    <!-- Docs nav
+      ================================================== --> 
+    
+    <!-- CONTENT -->
+    <div class="span9"> 
+      
+      <!-- INTRODUCTION
+        ================================================== -->
+      <section id="introduction">
+        <div class="page-header">
+          <h1>Introduction<small>a quick introduction</small></h1>
+        </div>
+        
+        <!--row fluid-->
+        <div class="row-fluid">
+          <div class="span8">
+            <div class="page-header">
+              <h4>created : <small>01.02.2014</small></h4>
+            </div>
+          </div>
+          <div class="span4">
+            <div class="page-header">
+              <p>by <a href="http://themeforest.net/user/pixelwars" target="_blank">pixelwars</a></p>
+            </div>
+          </div>
+        </div>
+        <!--row fluid--> 
+        
+        <!--thanks-->
+        <blockquote>
+          <p class="lead">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, you can sign in to our support forums with your purchase code. And please rate the theme on themeforest if you liked it. Thanks so much!</p>
+          <cite  class="muted" title="Source Title"> - Pixelwars Team</cite> </blockquote>
+        <!--thanks--> 
+        
+        <!--row fluid-->
+        <div class="row-fluid">
+          <div class="span4">
+            <h3>Support Forums</h3>
+            <p>Any questions that are beyond the scope of this help file, use <span class="highlight">support forums</span>.</p>
+            <p><a class="btn btn-large" href="http://www.pixelwars.org/forums/" target="_blank" >Visit Support Forums</a></p>
+          </div>
+          <div class="span4">
+            <h3>Follow us</h3>
+            <p>Follow us on themeforest and don't miss new upcoming premium themes.</p>
+            <p><a class="btn btn-large" href="http://themeforest.net/user/pixelwars/follow" target="_blank" >Follow us on themeforest</a></p>
+          </div>
+          <div class="span4">
+            <h3>Rate Theme</h3>
+            <p>If you liked the theme you can rate it on themeforest in your downloads menu.</p>
+            <p><a class="btn btn-large btn-success" href="http://themeforest.net/user/pixelwars/portfolio" target="_blank">Rate on themeforest</a></p>
+          </div>
+        </div>
+        <!--row fluid--> 
+        
+      </section>
+      <!-- INTRODUCTION
+        ================================================== --> 
+      
+      <!-- GETTING STARTED
+        ================================================== -->
+      <section id="getting-started">
+        <div class="page-header">
+          <h1>Getting Started<small>things to know before get started</small></h1>
+        </div>
+        <p class="lead">We assume you have basic knowledge of HTML / CSS and JS. In this doc you will not learn how to code but you will learn how to setup, use and customize the theme. Before you begin make sure you have a code editor, you can use Dreamweaver or any other editor like <a href="http://notepad-plus-plus.org/" target="_blank">Notepad++</a> will be enough.</p>
+        
+        <!-- FILE STRUCTURE
+            ================================================== -->
+        <div id="file-structure" class="sub-section">
+          <div class="page-header">
+            <h2>File structure</h2>
+          </div>
+          <p class="lead">Within the download you'll find the following file structure, logically groupped common assets.</p>
+          <p>Once downloaded, unzip the compressed folder to see the structure of th theme. You'll see something like this:</p>
+          <pre class="prettyprint">
+  cvCard/
+  ├── css/
+  ├── js/
+  ├── media/
+  ├── images/
+  ├── Templates/
+  └── index.html
+  └── other html files
+</pre>
+			<p>If you have Dreamweaver, and you are going to build a static html site with this template you can benefit template files in "Templates" folder. Template files includes layout markup shared by all pages, and once you have updated a template all pages that inherits that template are automatically updated. For example if you create a new site in Dreamweaver, then copy all project files to this site folder, then open "layout.dwt" under "Templates/" folder and update some parts in the markup in "layout.dwt", when you save it, all pages' markup will be updated. Check out this <a target="_blank" href="http://www.thesitewizard.com/gettingstarted/dreamweaver5.shtml">article</a> for more about Dreamweaver templates. Here are the Dreamweaver template files in this project;</p>
+        
+        <ul>
+        	<li><strong>layout.dwt</strong> Includes general layout markup shared by all  pages.</li>
+        </ul>
+        </div>
+        <!-- FILE STRUCTURE
+            ================================================== --> 
+        
+      </section>
+      <!-- GETTING STARTED
+        ================================================== --> 
+      
+      <!-- HTML
+        ================================================== -->
+      <section id="html">
+        <div class="page-header">
+          <h1>HTML<small>html structure and layout</small></h1>
+        </div>
+        <p class="lead">In this template you will find all HTML files in well formatted and highly commented.. Most of the markup is self explanatory with comments. So i will only explain the parts where the markup needs more attention.</p>
+        <p class="lead">cvCard includes two layout; one is "CSS3 Sliding Horizontal Layout" and the other is "Classic Layout" for non supported browsers. Both layout uses the same common markup. This template is a kind of a one page template, all pages are in "index.html".</p>
+        
+        <h3>Doctype</h3>
+        <p>Uses plain HTML5 Doctype</p>
+        <pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;</pre>
+		<h3>Html tag</h3>
+        <p>html tag with custom html5 data attributes for easy customizing. You can learn more about in <a href="#customization">customization section</a></p>
+        <pre class="prettyprint linenums">&lt;html lang=&quot;en&quot; class=&quot;no-js one-page-layout&quot; data-classic-layout=&quot;false&quot; data-mobile-only-classic-layout=&quot;true&quot; data-inAnimation=&quot;fadeInUp&quot; data-outAnimation=&quot;fadeOutDownBig&quot;&gt;</pre>
+        <p><strong>Important :</strong> <code>one-page-layout</code> class only used in <code>index.html</code> file which has a one page layout.</p>
+        <p>Other single pages use <code>single-page-layout</code> class;</p>
+        <pre class="prettyprint linenums">&lt;html lang=&quot;en&quot; class=&quot;no-js single-page-layout&quot; data-classic-layout=&quot;false&quot; data-mobile-only-classic-layout=&quot;true&quot; data-inAnimation=&quot;fadeInUp&quot; data-outAnimation=&quot;fadeOutDownBig&quot;&gt;</pre>
+        <!-- HEAD
+            ================================================== -->
+        <div id="head" class="sub-section">
+          <div class="page-header">
+            <h2>Head</h2>
+          </div>
+          <p>Head tags contains meta tags, font / css and some script files, other script files are added just before the closing tag of the body.</p>
+          <p>Here are meta tags and title. You can edit them as you want except the <span class="highlight">viewport</span> meta tag, it preserves responsive layout.</p>
+          <pre class="prettyprint linenums">
+&lt;meta charset=&quot;utf-8&quot; /&gt; 
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;  
+&lt;meta name=&quot;description&quot; content=&quot;cvCard - Responsive HTML5 vCard Template&quot;&gt; 
+&lt;meta name=&quot;keywords&quot; content=&quot;vcard, html5, portfolio&quot;&gt; 
+&lt;meta name=&quot;author&quot; content=&quot;Pixelwars&quot;&gt; 
+
+&lt;title&gt;cvCard&lt;/title&gt; </pre>
+			
+            <p>You will see <code>.htaccess</code> file in the template directory. This file contains the code piece that prevents IE to go into "compatibility mode" and ruins the layout. But this file is for "Apache servers". If you will not host your site on "Apache server" and want support IE8, then you should add the meta tag below. But remember this code will not be validated by <a target="_blank" href="http://validator.w3.org/">w3 validator</a>.</p>
+            
+            <pre class="prettyprint linenums">
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; &gt;</pre>
+            
+          <p>Here are favicon and apple touch icons;</p>
+          <pre class="prettyprint linenums">
+&lt;!-- FAV and TOUCH ICONS --&gt; 
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;images/ico/favicon.ico&quot;&gt; 
+&lt;link rel=&quot;apple-touch-icon&quot; href=&quot;images/ico/apple-touch-icon.png&quot;/&gt; </pre>
+          <p>Here are font files. Fonts by <a target="_new" href="http://www.google.com/webfonts">Google Webfonts</a></p>
+          <pre class="prettyprint linenums">
+&lt;!-- FONTS --&gt; 
+&lt;link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'&gt; 
+&lt;link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'&gt; 
+&lt;link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'&gt;</pre>
+          
+          <p>Modernizr script.</p>
+          <pre class="prettyprint linenums">
+&lt;script src=&quot;js/modernizr.custom.js&quot;&gt;&lt;/script&gt; </pre>
+          <p>Here are css files.</p>
+          <pre class="prettyprint linenums">
+&lt;!-- STYLES --&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; media=&quot;print&quot; href=&quot;css/print.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/normalize.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/bootstrap.min.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/nprogress/nprogress.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/animate.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/fonts/font-awesome/css/font-awesome.min.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/fonts/fontello/css/fontello.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/jquery.fancybox-1.3.4.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/google-code-prettify/prettify.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/uniform.default.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/flexslider.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/mediaelement/mediaelementplayer.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/tooltipster.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/style.css&quot;&gt; 
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/main.css&quot;&gt; </pre>   
+
+<p>Fallback script files for older ie versions.</p>
+          <pre class="prettyprint linenums">
+&lt;!--[if lte IE 9]&gt; 	
+	&lt;script src=&quot;js/html5shiv.js&quot;&gt;&lt;/script&gt; 	
+	&lt;script src=&quot;js/respond.min.js&quot;&gt;&lt;/script&gt; 	
+	&lt;script src=&quot;js/selectivizr-min.js&quot;&gt;&lt;/script&gt; 
+&lt;![endif]--&gt; </pre>
+          
+			<p>jQuery and other script files are located at the <span class="highlight">end of the body tag</span>. These are the general script files used over all files.</p>
+          <pre class="prettyprint linenums">
+&lt;!-- SCRIPTS --&gt;
+&lt;script src=&quot;js/jquery-1.10.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery-migrate-1.2.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.address-1.5.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/triple.layout.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/smoothscroll.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/nprogress/nprogress.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/fastclick.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.imagesloaded.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.isotope.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.flexslider-min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.fitvids.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.validate.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.uniform.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.fancybox-1.3.4.pack.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.tooltipster.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/google-code-prettify/prettify.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/twitterFetcher_v10_min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/mediaelement/mediaelement-and-player.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/send-mail.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/classie.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/main.js&quot;&gt;&lt;/script&gt;
+</pre>
+        </div>
+        <!-- HEAD
+            ================================================== --> 
+        
+        <!-- LAYOUT
+            ================================================== -->
+        <div id="layout" class="sub-section">
+          <div class="page-header">
+            <h2>Layout</h2>
+          </div>
+          <p class="lead">This template has 5 pages in index.html file: About Me + Portfolio + Contact + Blog(latest posts only) + Resume. The HTML files are in well formatted and highly commented.</p>
+          
+          <h3>Layout Markup</h3>
+          <p>Here is the markup for general layout;</p>
+          <pre class="prettyprint linenums">
+&lt;!-- CONTAINER --&gt;
+&lt;div class=&quot;container&quot; id=&quot;container&quot;&gt;
+	
+	&lt;!-- HEADER --&gt;
+	&lt;header class=&quot;header&quot;&gt;
+	
+	&lt;/header&gt;
+	&lt;!-- HEADER --&gt;
+	
+
+	&lt;!-- WRAPPER --&gt;
+	&lt;div class=&quot;wrapper&quot;&gt;
+	
+	
+		&lt;!-- PAGE : ABOUT --&gt;
+		&lt;section id=&quot;about&quot; class=&quot;page&quot;&gt;
+			&lt;div class=&quot;content&quot;&gt;
+			
+				&lt;!-- ABOUT PAGE CONTENT --&gt;
+				
+			&lt;/div&gt;
+			&lt;!-- CONTENT --&gt;
+		&lt;/section&gt;
+		&lt;!-- PAGE : ABOUT --&gt;
+		
+		
+		&lt;!-- PAGE : PORTFOLIO --&gt;
+		&lt;section id=&quot;portfolio&quot; class=&quot;portfolio page&quot;&gt;
+			&lt;div class=&quot;content&quot;&gt;
+				
+				&lt;!-- PORTFOLIO PAGE CONTENT --&gt;
+			
+			&lt;/div&gt;
+			&lt;!-- CONTENT --&gt;
+		&lt;/section&gt;
+		&lt;!-- PAGE : PORTFOLIO --&gt;
+		
+		
+		&lt;!-- PAGE : CONTACT --&gt;
+		&lt;section id=&quot;contact&quot; class=&quot;page&quot;&gt;
+			&lt;div class=&quot;content&quot;&gt;
+					
+				 &lt;!-- CONTACT PAGE CONTENT --&gt;					  
+								  
+			&lt;/div&gt;
+		&lt;/section&gt;
+		&lt;!-- PAGE : CONTACT --&gt;
+		
+		
+		&lt;!-- PAGE : BLOG --&gt;
+		&lt;section id=&quot;blog&quot; class=&quot;page&quot;&gt;
+			&lt;div class=&quot;content&quot;&gt;
+				
+				&lt;!-- BLOG PAGE CONTENT --&gt;	   
+				
+			&lt;/div&gt;
+		&lt;/section&gt;
+		&lt;!-- PAGE : BLOG --&gt;
+		
+		
+		&lt;!-- PAGE : RESUME --&gt;
+		&lt;section id=&quot;resume&quot; class=&quot;page&quot;&gt;
+			&lt;div class=&quot;content&quot;&gt;
+				
+				&lt;!-- RESUME PAGE CONTENT --&gt;			   
+				
+			&lt;/div&gt;
+			&lt;!-- CONTENT --&gt;
+		&lt;/section&gt;
+		&lt;!-- PAGE : RESUME --&gt;
+
+	
+	&lt;/div&gt;
+	&lt;!-- WRAPPER --&gt;
+	
+	
+&lt;/div&gt;
+&lt;!-- CONTAINER --&gt;
+        
+  
+&lt;!-- PORTFOLIO SINGLE AJAX CONTENT CONTAINER --&gt;
+&lt;div class=&quot;p-overlay&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;p-overlay&quot;&gt;&lt;/div&gt;
+
+&lt;!-- ALERT : used for contact form mail delivery alert --&gt;
+&lt;div class=&quot;site-alert animated&quot;&gt;&lt;/div&gt;
+</pre>
+          
+          <h3>Header Markup</h3>
+          <p>Here is the markup for header.</p>
+          <pre class="prettyprint linenums">
+&lt;!-- HEADER --&gt;
+&lt;header class=&quot;header&quot;&gt;
+
+	&lt;img src=&quot;images/site/avatar.png&quot; alt=&quot;avatar&quot;&gt;
+	&lt;h1&gt;Johnny Doe&lt;/h1&gt;
+	&lt;p&gt;freelance graphic designer&lt;/p&gt;
+
+	&lt;!-- NAV MENU --&gt;
+	&lt;ul class=&quot;vs-nav&quot;&gt;
+		
+		&lt;li&gt;&lt;a href=&quot;#/about&quot;&gt;about me&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#/portfolio&quot;&gt;portfolio&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#/contact&quot;&gt;contact&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#/blog&quot;&gt;blog&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#/resume&quot;&gt;resume&lt;/a&gt;&lt;/li&gt;
+
+	&lt;/ul&gt;
+	&lt;!-- NAV MENU --&gt;
+
+	&lt;!-- SEARCH --&gt; 
+	&lt;div class=&quot;header-search&quot;&gt;
+		&lt;form role=&quot;search&quot; method=&quot;get&quot; id=&quot;search-form&quot; action=&quot;#&quot;&gt;
+		  &lt;input type=&quot;text&quot; value=&quot;&quot; name=&quot;s&quot; id=&quot;search&quot; placeholder=&quot;ENTER KEYWORD&quot;&gt;
+		  &lt;input type=&quot;submit&quot; id=&quot;search-submit&quot; title=&quot;Search&quot; value=&quot;&amp;#8594;&quot;&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+	&lt;!-- SEARCH --&gt;
+
+&lt;/header&gt;
+&lt;!-- HEADER --&gt;
+</pre>
+          
+        </div>
+        <!-- LAYOUT
+            ================================================== --> 
+        
+        
+        <!-- GRID
+            ================================================== -->
+        <div id="grid" class="sub-section">
+          <div class="page-header">
+            <h2>Grid<small>Responsive Grid System</small></h2>
+          </div>
+          <p class="lead">This template is based on <a target="_blank" href="http://getbootstrap.com/">Bootstrap </a>'s solid responsive 12 column <a target="_blank" href="http://getbootstrap.com/css/#grid">grid system</a>.</p>
+          
+          <p>Here is a simple example of using grid to crate a 3 column layout;</p>
+
+          <pre class="prettyprint linenums">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;column 4/12&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;column 4/12&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;column 4/12&lt;/div&gt;
+&lt;/div&gt;</pre>
+		
+        <p>Note that: columns must be wrapped by a <code>row</code> container. This is a simple usage of the grid system. Bootstrap grid sytems has more powerfull features, check out <a target="_blank" href="http://getbootstrap.com/css/#grid">Bootstrap Doc</a> to learn more about the grid system.</p>
+        
+        </div>
+        <!-- GRID
+            ================================================== -->
+        
+
+
+        <!-- ICONS
+            ================================================== -->
+        <div id="icons" class="sub-section">
+          <div class="page-header">
+            <h2>Icons<small>over 500 icons ready to use</small></h2>
+          </div>
+          <p class="lead">This template uses 2 font icon set. They are all font icons(vector) and can be styled easily with css. They are also easy to drop in anywhere as you will see in some part of this template.</p> 
+          
+          <h3>All Available Icons</h3>
+          
+          <p><a target="_blank" href="http://fontawesome.io/icons/">300+ FontAwesome Icons</a></p>
+          
+          <p><a target="_blank" href="../cvCard-html5/css/fonts/fontello/demo.html">200+ Fontello Icons</a></p>
+          
+          
+          <h3>Usage of the icons</h3>
+          
+          <p>For FontAwesome icons;</p>
+          
+          <pre class="prettyprint linenums">
+&lt;i class=&quot;fa fa-microphone&quot;&gt;&lt;/i&gt;</pre>
+		
+        <p>For Fontello icons;</p>
+          
+          <pre class="prettyprint linenums">
+&lt;i class=&quot;icon-comment&quot;&gt;&lt;/i&gt;</pre>
+        
+        </div>
+        <!-- ICONS
+            ================================================== -->
+
+        
+        
+        <!-- ABOUT ME 
+            ================================================== -->
+        <div id="about-me" class="sub-section">
+          <div class="page-header">
+            <h2>About Me</h2>
+          </div>
+          <p>&quot;About Me&quot; page is consist of : Intro Text / Latest Tweets / Services / Work Process / Fun Fact and Clients.</p>
+          
+          <h3>Intro Text</h3>
+          
+          <pre class="prettyprint linenums">
+&lt;!-- intro --&gt;
+&lt;div class=&quot;intro&quot;&gt;
+
+	&lt;h2&gt;
+		
+		Hello. I am
+	
+		&lt;span class=&quot;rotate-words&quot;&gt;
+			&lt;span&gt;an illustrator.&lt;/span&gt;
+			&lt;span&gt;a writer.&lt;/span&gt;
+			&lt;span&gt;a freelancer.&lt;/span&gt;
+			&lt;span&gt;an inventor.&lt;/span&gt;
+			&lt;span&gt;a wordpress fan.&lt;/span&gt;
+			&lt;span&gt;a coffee lover.&lt;/span&gt;
+		&lt;/span&gt;
+		
+		&lt;br&gt; 
+		I live in a small town somewhere in the world. 
+		&lt;br&gt; 
+		I am passionated about &lt;strong&gt;minimalistic&lt;/strong&gt; and flat design.
+		
+	&lt;/h2&gt;
+	  
+&lt;/div&gt;
+&lt;!-- intro --&gt;</pre>
+
+		<p>You can add many <code>span</code> to <code>div.rotate-words</code>, they will be rotated automatically.</p>
+
+          <h3>Latest Tweets</h3>
+          
+          <pre class="prettyprint linenums">
+&lt;div id=&quot;latest-tweets&quot; class=&quot;widget-twitter&quot; data-twitterId=&quot;388393979672150017&quot; data-tweet-count=&quot;1&quot;&gt;&lt;/div&gt;</pre>
+
+        <p>How to create a valid ID to use:</p>
+        <ol>
+        	<li>Go to www.twitter.com and sign in as normal, go to your settings page.</li>
+            <li>Go to "Widgets" on the left hand side.</li>
+            <li>Create a new widget for what you need eg "user timeline" or "search" etc. </li>
+            <li>Feel free to check "exclude replies" if you dont want replies in results.</li>
+            <li>Now go back to settings page, and then go back to widgets page, you should</li>
+            <li>see the widget you just created. Click edit.</li>
+            <li>Now look at the URL in your web browser, you will see a long number like this: 345735908357048478</li>
+            <li>Use this as your ID : <code>data-twitterId</code></li>
+        </ol>		
+         
+         <p><code>data-tweet-count</code> determines how many tweet to show.</p>
+         
+         
+        </div>
+        <!-- ABOUT ME
+            ================================================== --> 
+        
+        <!-- RESUME
+            ================================================== -->
+        <div id="resume" class="sub-section">
+          <div class="page-header">
+            <h2>Resume</h2>
+          </div>
+          <p>Resume page is consist of : Work and Education History/ Skills / Testimonials. </p>
+          <h3>Skills</h3>
+          <p>Here is the markup for skills;</p>
+          <pre class="prettyprint linenums">
+&lt;!-- DEV SKILLS --&gt;
+&lt;div class=&quot;skillset&quot;&gt;
+
+	&lt;!-- .skill-unit --&gt;
+	&lt;div class=&quot;skill-unit&quot;&gt;
+		&lt;h4&gt;HTML5&lt;/h4&gt;
+		&lt;div class=&quot;bar&quot; data-percent=&quot;100&quot;&gt;
+			&lt;div class=&quot;progress&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- .skill-unit --&gt;
+	
+	&lt;!-- .skill-unit --&gt;
+	&lt;div class=&quot;skill-unit&quot;&gt;
+		&lt;h4&gt;CSS3&lt;/h4&gt;
+		&lt;div class=&quot;bar&quot; data-percent=&quot;50&quot;&gt;
+			&lt;div class=&quot;progress&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- .skill-unit --&gt;
+
+&lt;/div&gt;
+&lt;!-- DEV SKILLS --&gt;
+</pre>
+			<p><strong>Note that : </strong> Use <code>data-percent="number"</code> attribute to give percentage to each skill.</p>
+        </div>
+        <!-- RESUME
+            ================================================== --> 
+        
+        <!-- PORTFOLIO
+            ================================================== -->
+        <div id="portfolio" class="sub-section">
+          <div class="page-header">
+            <h2>Portfolio</h2>
+          </div>
+          <p>Portfolio page has multi column masonry layout and filtering powered by <a target="_blank" href="http://isotope.metafizzy.co/">isotope</a> plugin.</p>
+          <h3>Filters</h3>
+          <p>Here is the markup for filters;</p>
+          
+          <pre class="prettyprint linenums">
+&lt;!--FILTERS--&gt;
+&lt;ul id=&quot;filters&quot; class=&quot;filters&quot;&gt;
+  &lt;li class=&quot;current&quot;&gt;&lt;a href=&quot;#&quot; data-filter=&quot;*&quot;&gt;ALL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot; data-filter=&quot;.design&quot;&gt;DESIGN&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot; data-filter=&quot;.coding&quot;&gt;CODING&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot; data-filter=&quot;.logo&quot;&gt;LOGO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--FILTERS--&gt;</pre>
+<p><strong>Note that : </strong> <code>data-filter=".design"</code> attiribute keeps the class name of items which will be filtered under same category.</p>
+
+			<h3>Portfolio Items</h3>
+          <p>Here is the structure of portfolio items;</p>
+          
+          <pre class="prettyprint linenums">&lt;!-- PORTFOLIO ITEMS --&gt;
+&lt;div class=&quot;portfolio-items media-grid&quot; data-layout=&quot;masonry&quot;&gt;
+
+  &lt;div class=&quot;hentry design media-cell&quot;&gt;
+	...
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;hentry coding media-cell&quot;&gt;
+	...
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;hentry logo media-cell&quot;&gt;
+	..
+  &lt;/div&gt;
+  
+&lt;/div&gt;
+&lt;!-- PORTFOLIO ITEMS --&gt;   </pre>
+			<p><strong>Note that again : </strong> class name design in <code>&lt;div class=&quot;hentry design&quot;&gt;</code> is related to <code>data-filter=".design"</code> attribute of filter markup.</p>
+            <p><code>data-layout</code> determines grid layout, see <a target="_blank" href="http://isotope.metafizzy.co/docs/layout-modes.html">all isotope layouts</a>. Most used two layouts are <code>masonry</code> and <code>fitRows</code>.</p>
+            
+          <div class="page-header">
+            <h3>Portfolio Item Types</h3>
+          </div>
+          <p>We have 3 different types of portfolio item in general; Ajax Portfolio Details (with sidebar - full width layout) / Lightbox (image - image gallery - video - audio) and Custom Url.</p>
+          <h4>1- Ajax Portfolio Details Link</h4>
+          <p>Uses jquery ajax html loading to show portfolio details. Here is the markup;</p>
+          <pre class="prettyprint linenums">&lt;!-- portfolio-item --&gt;  
+&lt;div class=&quot;media-cell design hentry&quot;&gt;
+
+	&lt;div class=&quot;media-box&quot;&gt;
+		&lt;img src=&quot;images/portfolio/01.png&quot; alt=&quot;portfolio-post&quot;&gt;
+		&lt;div class=&quot;mask&quot;&gt;&lt;/div&gt;
+		&lt;a href=&quot;portfolio-item-01.html&quot; class=&quot;ajax&quot;&gt;&lt;/a&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;media-cell-desc&quot;&gt;
+		&lt;h3&gt;Personal Cv Project&lt;/h3&gt;
+		&lt;p class=&quot;category&quot;&gt;an illustration work&lt;/p&gt;
+	&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!-- portfolio-item --&gt;</pre>
+			
+            <h4>2- Lightbox Portfolio Details Link</h4>
+          <p>Uses customized and mobile optimized <a href="http://fancybox.net/" target="_blank">fancybox</a> plugin. Supports image titles, image gellaries, videos and audios. Here is the markup;</p>
+          <pre class="prettyprint linenums">  &lt;!-- portfolio-item - lightbox image --&gt;  
+  &lt;div class=&quot;media-cell design image hentry&quot;&gt;
+	&lt;div class=&quot;media-box&quot;&gt;
+		&lt;img src=&quot;images/portfolio/04.png&quot; alt=&quot;portfolio-post&quot;&gt;
+		&lt;div class=&quot;mask&quot;&gt;
+		
+			&lt;!-- lightbox - image --&gt; 
+			&lt;a href=&quot;images/portfolio/lightbox-01.jpg&quot; title=&quot;an illustration by Vasili Tkach&quot; data-lightbox-gallery=&quot;fancybox-item-01&quot; class=&quot;lightbox&quot;&gt;&lt;/a&gt;
+			&lt;!-- lightbox - image --&gt;
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-cell-desc&quot;&gt;
+		&lt;h3&gt;World War X&lt;/h3&gt;
+		&lt;p class=&quot;category&quot;&gt;ligthbox image&lt;/p&gt;
+	&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- portfolio-item - lightbox image --&gt;
+  
+  
+  &lt;!-- portfolio-item - lightbox gallery --&gt;
+  &lt;div class=&quot;media-cell logo image hentry&quot;&gt;
+	&lt;div class=&quot;media-box&quot;&gt;
+		&lt;img src=&quot;images/portfolio/07.png&quot; alt=&quot;portfolio-post&quot;&gt;
+		&lt;div class=&quot;mask&quot;&gt;
+			
+			&lt;!-- lightbox - gallery --&gt;
+			&lt;a href=&quot;images/portfolio/lightbox-02.jpg&quot; data-lightbox-gallery=&quot;fancybox-item-02&quot; class=&quot;lightbox&quot; title=&quot;Octopus is dangerous!&quot;&gt;&lt;/a&gt;
+			&lt;a href=&quot;images/portfolio/lightbox-03.jpg&quot; data-lightbox-gallery=&quot;fancybox-item-02&quot; class=&quot;hidden lightbox&quot;&gt;&lt;/a&gt;
+			&lt;a href=&quot;images/portfolio/lightbox-04.jpg&quot; data-lightbox-gallery=&quot;fancybox-item-02&quot; class=&quot;hidden lightbox&quot; title=&quot;Dog have dreams&quot;&gt;&lt;/a&gt;
+			&lt;!-- lightbox - gallery --&gt;
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-cell-desc&quot;&gt;
+		&lt;h3&gt;Wizard Adventure&lt;/h3&gt;
+		&lt;p class=&quot;category&quot;&gt;lightbox gallery&lt;/p&gt;
+	&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- portfolio-item - lightbox gallery --&gt;
+  
+  
+  &lt;!-- portfolio-item - lightbox video --&gt;  
+  &lt;div class=&quot;media-cell coding video hentry&quot;&gt;
+	
+	&lt;div class=&quot;media-box&quot;&gt;
+		&lt;img src=&quot;images/portfolio/03.png&quot; alt=&quot;portfolio-post&quot;&gt;
+		&lt;div class=&quot;mask&quot;&gt;&lt;/div&gt;
+		&lt;!-- lightbox - video --&gt; 
+		&lt;a href=&quot;http://player.vimeo.com/video/79380715?title=0&amp;amp;byline=0&amp;amp;portrait=0&amp;amp;color=009966&quot; title=&quot;Paper by FiftyThree&quot; data-lightbox-gallery=&quot;fancybox-item-03&quot; class=&quot;lightbox iframe&quot;&gt;&lt;/a&gt;
+		&lt;!-- lightbox - video --&gt;
+	&lt;/div&gt;
+	
+	&lt;div class=&quot;media-cell-desc&quot;&gt;
+		&lt;h3&gt;Sleepy Games&lt;/h3&gt;
+		&lt;p class=&quot;category&quot;&gt;lightbox video&lt;/p&gt;
+	&lt;/div&gt;
+	
+  &lt;/div&gt;
+  &lt;!-- portfolio-item - lightbox video --&gt;
+  
+  
+  &lt;!-- portfolio-item - lightbox soundcloud --&gt;  
+  &lt;div class=&quot;media-cell coding audio hentry&quot;&gt;
+	&lt;div class=&quot;media-box&quot;&gt;
+		&lt;img src=&quot;images/portfolio/06.png&quot; alt=&quot;portfolio-post&quot;&gt;
+		&lt;div class=&quot;mask&quot;&gt;
+			
+			&lt;!-- lightbox - soundcloud --&gt; 
+			&lt;a href=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129829419&amp;amp;color=009966&amp;amp;auto_play=false&amp;amp;show_artwork=true&quot; title=&quot;Soundcloud embed&quot; data-lightbox-gallery=&quot;fancybox-item-04&quot; class=&quot;lightbox iframe&quot;&gt;&lt;/a&gt;
+			&lt;!-- lightbox - soundcloud --&gt;
+			
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-cell-desc&quot;&gt;
+		&lt;h3&gt;Empty Battery&lt;/h3&gt;
+		&lt;p class=&quot;category&quot;&gt;lightbox soundcloud&lt;/p&gt;
+	&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- portfolio-item - lightbox soundcloud --&gt;
+</pre>
+          <p> <strong>Note that : </strong> items with the same value of <code>data-lightbox-gallery</code> attribute will be shown as lightbox gallery. </p>
+          <p> <strong>Note that : </strong> lightbox video or audio link need to have class <code>iframe</code> to work correctly. <p>
+          
+          <h4>3- Custom Url</h4>
+          
+          <p>Opens a custom url in a new tab. The markup;</p>
+          
+<pre class="prettyprint linenums">
+&lt;!-- portfolio-item - custom url --&gt;  
+&lt;div class=&quot;media-cell logo url hentry&quot;&gt;
+	&lt;div class=&quot;media-box&quot;&gt;
+		&lt;img src=&quot;images/portfolio/08.png&quot; alt=&quot;portfolio-post&quot;&gt;
+		&lt;div class=&quot;mask&quot;&gt;
+			&lt;a href=&quot;http://themeforest.net/user/pixelwars&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-cell-desc&quot;&gt;
+		&lt;h3&gt;Shinny Robot&lt;/h3&gt;
+		&lt;p class=&quot;category&quot;&gt;an illustration work&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- portfolio-item - custom url --&gt;          
+</pre>
+          
+        </div>
+        <!-- PORTFOLIO
+            ================================================== --> 
+        
+        <!-- PORTFOLIO SINGLE
+            ================================================== -->
+        <div id="portfolio-single" class="sub-section">
+          <div class="page-header">
+            <h2>Portfolio Single</h2>
+          </div>
+          <p>We have two different layout for portfolio details: Sidebar / without Sidebar.</p>
+          <div class="alert"> <strong>Remember : </strong> You need to create an html file for for each portfolio item.          </div>
+          <h3>Portfolio Single Layout</h3>
+          <p>Here is the generic layout of portfolio single pages;</p>
+          <pre class="prettyprint linenums">&lt;!-- CONTAINER --&gt;
+&lt;div class=&quot;container&quot; id=&quot;container&quot;&gt;
+	
+	&lt;!-- HEADER --&gt;
+	&lt;header class=&quot;header&quot;&gt;
+		
+	&lt;/header&gt;
+	&lt;!-- HEADER --&gt;
+	
+	&lt;!-- WRAPPER --&gt;
+	&lt;div class=&quot;wrapper&quot;&gt;
+
+		&lt;!-- .portfolio-single --&gt;
+		&lt;div class=&quot;portfolio-single&quot;&gt;
+		
+			&lt;!-- .row --&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				
+				&lt;!-- TITLE - column 8/12 --&gt;
+				&lt;div class=&quot;col-md-8 portfolio-field portfolio-title&quot;&gt;
+					&lt;h2&gt;Showcase your project&lt;/h2&gt;
+				&lt;/div&gt;
+				&lt;!-- TITLE - column 8/12 --&gt;
+				
+				&lt;!-- PORTFOLIO-NAV - column 4/12 --&gt;
+				&lt;div class=&quot;col-md-4 portfolio-field portfolio-nav&quot;&gt;
+					&lt;a class=&quot;icon button prev ajax&quot; href=&quot;portfolio-item-03.html&quot;&gt;&lt;/a&gt;
+					&lt;a class=&quot;icon button next ajax&quot; href=&quot;portfolio-item-02.html&quot;&gt;&lt;/a&gt;
+					&lt;a class=&quot;button back&quot; href=&quot;#/portfolio&quot;&gt;&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;!-- PORTFOLIO-NAV - column 4/12 --&gt;    
+			
+			&lt;/div&gt;
+			&lt;!-- .row --&gt;
+			
+				
+			&lt;!-- PORTFOLIO SINGLE PAGE CONTENT --&gt;
+			
+			
+			&lt;!-- .row --&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				
+				&lt;!-- PORTFOLIO-NAV BOTTOM - column 12/12 --&gt;
+				&lt;div class=&quot;col-md-12 portfolio-field portfolio-nav bottom&quot;&gt;
+					&lt;a class=&quot;icon button prev ajax&quot; href=&quot;portfolio-item-03.html&quot;&gt;&lt;/a&gt;
+					&lt;a class=&quot;icon button next ajax&quot; href=&quot;portfolio-item-02.html&quot;&gt;&lt;/a&gt;
+					&lt;a class=&quot;button back&quot; href=&quot;#/portfolio&quot;&gt;&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;!-- PORTFOLIO-NAV BOTTOM - column 12/12 --&gt;    
+			
+			&lt;/div&gt;
+			&lt;!-- .row --&gt;
+			
+		&lt;/div&gt;
+		&lt;!-- .portfolio-single --&gt;
+		
+	&lt;/div&gt;
+	&lt;!-- WRAPPER --&gt;
+	
+&lt;/div&gt;
+&lt;!-- CONTAINER --&gt;</pre>
+          <p><strong>Note : </strong> we will pull the content of <code>&lt;div class=&quot;portfolio-single&quot;&gt;</code> in index.html via ajax. </p>
+          <h4>1 - Portfolio Single with sidebar</h4>
+          <p>And the markup is;</p>
+          <pre class="prettyprint linenums">&lt;!-- .row --&gt;
+&lt;div class=&quot;row&quot;&gt;
+	
+	&lt;!-- PORTFOLIO-IMAGES - column 8/12 --&gt;
+	&lt;div class=&quot;col-md-8 portfolio-field&quot;&gt;
+		&lt;img src=&quot;images/portfolio/single/single-05.png&quot; alt=&quot;project&quot;&gt;
+		&lt;img src=&quot;images/portfolio/single/single-07.png&quot; alt=&quot;project&quot;&gt;
+	&lt;/div&gt;
+	&lt;!-- PORTFOLIO-IMAGES - column 8/12 --&gt;
+	
+	&lt;!-- PORTFOLIO SIDEBAR - column 4/12 --&gt;
+	&lt;div class=&quot;col-md-4 portfolio-field&quot;&gt;
+		
+		&lt;h3&gt;Description&lt;/h3&gt;
+		&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. &lt;/p&gt;
+		&lt;p&gt;Established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters. &lt;/p&gt;
+		
+		&lt;h3&gt;Client&lt;/h3&gt;
+		&lt;p&gt;Apple Inc.&lt;/p&gt;
+		
+		&lt;h3&gt;Technology&lt;/h3&gt;
+		&lt;ul class=&quot;tags&quot;&gt;
+			&lt;li&gt;&lt;a&gt;HTML 5&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a&gt;CSS 3&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a&gt;jQuery&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a&gt;Responsive Design&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		
+		&lt;div class=&quot;launch&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;button primary&quot;&gt;LAUNCH PROJECT&lt;/a&gt;
+		&lt;/div&gt;
+		
+	&lt;/div&gt;
+	&lt;!-- PORTFOLIO SIDEBAR - column 4/12 --&gt;    
+
+&lt;/div&gt;
+&lt;!-- .row --&gt;
+</pre>
+			<h4>2 - Portfolio Single Full Width</h4>
+          <p>And the markup is;</p>
+          <pre class="prettyprint linenums">&lt;!-- .row --&gt;
+&lt;div class=&quot;row&quot;&gt;
+	
+	&lt;!-- PORTFOLIO-IMAGES - column 8/12 --&gt;
+	&lt;div class=&quot;col-md-8 portfolio-field&quot;&gt;
+		&lt;img src=&quot;images/portfolio/single/single-05.png&quot; alt=&quot;project&quot;&gt;
+		&lt;img src=&quot;images/portfolio/single/single-07.png&quot; alt=&quot;project&quot;&gt;
+	&lt;/div&gt;
+	&lt;!-- PORTFOLIO-IMAGES - column 8/12 --&gt;
+	
+	&lt;!-- PORTFOLIO SIDEBAR - column 4/12 --&gt;
+	&lt;div class=&quot;col-md-4 portfolio-field&quot;&gt;
+		
+		&lt;h3&gt;Description&lt;/h3&gt;
+		&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. &lt;/p&gt;
+		&lt;p&gt;Established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters. &lt;/p&gt;
+		
+		&lt;h3&gt;Client&lt;/h3&gt;
+		&lt;p&gt;Apple Inc.&lt;/p&gt;
+		
+		&lt;h3&gt;Technology&lt;/h3&gt;
+		&lt;ul class=&quot;tags&quot;&gt;
+			&lt;li&gt;&lt;a&gt;HTML 5&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a&gt;CSS 3&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a&gt;jQuery&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a&gt;Responsive Design&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		
+		&lt;div class=&quot;launch&quot;&gt;
+			&lt;a href=&quot;#&quot; class=&quot;button primary&quot;&gt;LAUNCH PROJECT&lt;/a&gt;
+		&lt;/div&gt;
+		
+	&lt;/div&gt;
+	&lt;!-- PORTFOLIO SIDEBAR - column 4/12 --&gt;    
+
+&lt;/div&gt;
+&lt;!-- .row --&gt;
+</pre>
+          <p> <strong>NOTE :</strong> You can add images or videos as many as you wish to portfolio single content as shown above. They will behave flexible. </p>
+          <p> <strong>NOTE :</strong> You can built your own portfolio single templates with built in <a href="http://getbootstrap.com/css/#grid" target="_blank">bootstrap responsive grid</a> as you wish. </p>
+        </div>
+        <!-- PORTFOLIO SINGLE
+            ================================================== --> 
+        
+        <!-- CONTACT
+            ================================================== -->
+        <div id="contact" class="sub-section">
+          <div class="page-header">
+            <h2>Contact</h2>
+          </div>
+          <p>Contact page is consist of : Contact Info / Social Icons / Contact Form / Google Map.</p>
+          
+          <h3>Setting up Contact Form</h3>
+          
+          <p>1-) You can change mail subject in form's html markup;</p>
+          
+          <pre class="prettyprint linenums">&lt;!-- enter mail subject here --&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;subject&quot; id=&quot;subject&quot; value=&quot;You have a new message from cvCard!&quot;&gt;</pre>
+          <p>Change only the <code>value="You have a new message from cvCard!"</code> to your desired subject.</p>
+          
+          <p>2-) Edit <code>send-mail.php</code> in a text editor, </p>
+          
+          <pre class="prettyprint linenums">// site owner
+$site_name = 'cvCard HTML5 Template';
+$sender_domain = 'server@your-domain.com';
+$to = 'your-mail@gmail.com';
+</pre>
+          <ul>
+          	<li><code>$site_name</code> : this will be shown as sender name.</li>
+            <li><code>$sender_domain</code> : this is required for some hosting like dreamhost. It should be like <code>server@your-domain.com</code>.</li>
+            <li><code>$to</code> : This is the receiver e-mail address, your address.</li>
+          </ul>
+          
+          <h3>Social Icons</h3>
+          
+          <p>Here is the markup for all available social icons;</p>
+          
+          <pre class="prettyprint linenums">&lt;!-- SOCIAL --&gt;
+&lt;ul class=&quot;social&quot;&gt;
+	&lt;li&gt;&lt;a class=&quot;facebook&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;twitter&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;linkedin&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;google-plus&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;pinterest&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;github&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;behance&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;dribbble&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;instagram&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;lastfm&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;rss&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;vimeo&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;forrst&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;skype&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;picasa&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;youtube&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;flickr&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;tumblr&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;blogger&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;delicious&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;digg&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;friendfeed&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;wordpress&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;stack-overflow&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;foursquare&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;xing&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;weibo&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;soundcloud&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;fivehundredpx&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;slideshare&quot; href=&quot;#&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- SOCIAL --&gt;</pre>
+
+			<h3>Google Map</h3>
+          	
+            <p>This is the markup for google map;</p>
+            <pre class="prettyprint linenums">&lt;!-- GOOGLE MAP --&gt;
+&lt;div class=&quot;map&quot;&gt;
+	&lt;div data-latitude=&quot;-25.363882&quot; data-longitude=&quot;131.044922&quot; data-zoom=&quot;4&quot; id=&quot;map-canvas&quot; class=&quot;map-canvas&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- GOOGLE MAP --&gt;</pre>
+			<p><a target="_blank" href="https://support.google.com/maps/answer/18539?hl=en">How to get latitude and longitude values.</a></p>
+            <ul>
+          	<li><code>data-latitude</code> : enter latitude value for your map</li>
+            <li><code>data-longitude</code> : enter longitude value for your map</li>
+            <li><code>data-zoom</code> : enter zoom value for your map</li>
+            <li><code>$sender_domain</code> : this is required for some hosting like dreamhost. It should be like <code>server@your-domain.com</code>.</li>
+            <li><code>$to</code> : This is the receiver e-mail address, your address.</li>
+          </ul>
+        </div>
+        <!-- CONTACT
+            ================================================== --> 
+        
+        
+        <!-- SINGLE PAGE
+            ================================================== -->
+        <div id="single-page" class="sub-section">
+          <div class="page-header">
+            <h2>Single Page</h2>
+          </div>
+          <p>There are 2 different types of single page layout in this template;</p>
+          <h3>1- Fixed width layout</h3>
+          <p>Perfect for readable content. Here is the markup;</p>
+          <pre class="prettyprint linenums">
+&lt;!-- CONTAINER --&gt;
+&lt;div class=&quot;container&quot; id=&quot;container&quot;&gt;
+	
+	&lt;!-- HEADER --&gt;
+	&lt;header class=&quot;header&quot;&gt;
+
+	&lt;/header&gt;
+	&lt;!-- HEADER --&gt;
+	
+	&lt;!-- WRAPPER --&gt;
+	&lt;div class=&quot;wrapper&quot;&gt;
+
+		&lt;!-- .readable-content --&gt;
+		&lt;div class=&quot;readable-content&quot;&gt;
+		
+			&lt;!-- .hentry --&gt;
+			&lt;article class=&quot;post hentry&quot;&gt;
+				
+				&lt;!-- .entry-header --&gt;
+				&lt;header class=&quot;entry-header&quot;&gt;
+					 &lt;h1 class=&quot;entry-title&quot;&gt;PAGE TITLE&lt;/h1&gt;
+				&lt;/header&gt;
+				&lt;!-- .entry-header --&gt;
+				
+				&lt;!-- .entry-content --&gt;
+				&lt;div class=&quot;entry-content&quot;&gt;
+					
+					&lt;!-- PAGE CONTENT HERE --&gt;
+					
+				&lt;/div&gt;
+				&lt;!-- .entry-content --&gt;
+				
+			&lt;/article&gt;
+			&lt;!-- .hentry --&gt;
+			
+		&lt;/div&gt;
+		&lt;!-- .readable-content --&gt;
+		
+	&lt;/div&gt;
+	&lt;!-- WRAPPER --&gt;
+	
+&lt;/div&gt;
+&lt;!-- CONTAINER --&gt;
+</pre>
+		
+          <h3>2- Full width layout</h3>
+          <p>Perfect for readable content. Here is the markup;</p>
+          <pre class="prettyprint linenums">
+&lt;!-- CONTAINER --&gt;
+&lt;div class=&quot;container&quot; id=&quot;container&quot;&gt;
+	
+	&lt;!-- HEADER --&gt;
+	&lt;header class=&quot;header&quot;&gt;
+	
+	&lt;/header&gt;
+	&lt;!-- HEADER --&gt;
+	
+	&lt;!-- WRAPPER --&gt;
+	&lt;div class=&quot;wrapper&quot;&gt;
+		
+		&lt;!-- .full-width-content --&gt;
+		&lt;div class=&quot;full-width-content&quot;&gt;
+		
+			&lt;!-- .hentry --&gt;
+			&lt;article class=&quot;page type-page hentry&quot;&gt;
+				
+				&lt;!-- .entry-header --&gt;
+				&lt;header class=&quot;entry-header&quot;&gt;
+					 &lt;h1 class=&quot;entry-title&quot;&gt;PAGE TITLE&lt;/h1&gt;
+				&lt;/header&gt;
+				&lt;!-- .entry-header --&gt;
+				
+				&lt;!-- .entry-content --&gt;
+				&lt;div class=&quot;entry-content&quot;&gt;
+					
+					&lt;!-- PAGE CONTENT HERE --&gt;
+					
+				&lt;/div&gt;
+				&lt;!-- .entry-content --&gt;
+			
+			&lt;/article&gt;
+			&lt;!-- .hentry --&gt;
+		
+		&lt;/div&gt;
+		&lt;!-- .full-width-content --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- WRAPPER --&gt;
+	
+&lt;/div&gt;
+&lt;!-- CONTAINER --&gt;
+</pre>
+        
+        </div>
+        <!-- SINGLE PAGE
+            ================================================== --> 
+
+        
+        <!-- BLOG PAGE
+            ================================================== -->
+        <div id="blog-page" class="sub-section">
+          <div class="page-header">
+            <h2>Blog Page</h2>
+          </div>
+          <p>Blog page supports several post formats. I want to talk about self hosted audio and video. Other post format's html markup is simple enough.</p>
+     	  <p>This template uses <a target="_blank" href="http://mediaelementjs.com">mediaelementjs</a> script for self hosted html5 audio/video solution. It also has flash/silverlight fallbacks for non-supported browsers.</p>
+          <div class="page-header">
+            <h3>Self Hosted Audio</h3>
+          </div>
+          <p>Only one .mp3 file is enough for self hosted html5 audio. Here is the markup;</p>
+          <pre class="prettyprint linenums">
+&lt;audio preload=&quot;none&quot; src=&quot;media/AirReview-Landmarks-02-ChasingCorporate.mp3&quot;  style=&quot;width: 100%;&quot;&gt;&lt;/audio&gt;
+</pre>         
+		  <div class="page-header">
+            <h3>Self Hosted Video</h3>
+          </div>
+          <p>And again thanks to <a target="_blank" href="http://mediaelementjs.com">mediaelementjs</a> only one .mp4 file is enough for self hosted html5 video. Here is the markup;</p>
+          <pre class="prettyprint linenums">
+&lt;!-- .media-wrap --&gt;
+&lt;div class=&quot;media-wrap&quot;&gt;
+	&lt;video src=&quot;media/big-buck-bunny-trailer.mp4&quot; poster=&quot;media/big-buck-bunny-trailer.jpg&quot; preload=&quot;none&quot; style=&quot;width: 100%; height: 100%;&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+&lt;!-- .media-wrap --&gt;
+</pre>       
+			
+            <p><strong>Note : </strong> <code>&lt;div class=&quot;media-wrap&quot;&gt;</code>is needed to make the video responsive with correct aspect ratio.</p>
+            
+			<p><strong>Note : </strong> <code>poster=&quot;media/big-buck-bunny-trailer.jpg&quot;</code> is the image that will be shown as placeholder (or poster) before video playing.</p> 
+            
+            <div class="page-header">
+              <h3>Flexslider</h3>
+          </div>
+          <p>This template uses <a target="_blank" href="http://www.woothemes.com/flexslider/">flexslider</a> for image gallery. Here is the markup for slides;</p>
+          <pre class="prettyprint linenums">
+&lt;!-- .flexslider --&gt;
+&lt;div class=&quot;flexslider&quot; data-autoplay=&quot;false&quot; data-interval=&quot;3000&quot; data-animation=&quot;slide&quot; data-direction=&quot;horizontal&quot; data-animationSpeed=&quot;600&quot;  data-pauseOnHover=&quot;true&quot;&gt;
+	&lt;!-- .slides --&gt;
+	&lt;ul class=&quot;slides&quot;&gt;
+		
+		&lt;!-- slide --&gt;
+		&lt;li&gt;
+			&lt;img src=&quot;images/blog/daft-punk-presentation.png&quot; alt=&quot;slide&quot;&gt;
+			&lt;p class=&quot;flex-title&quot;&gt;This is a slide title.&lt;/p&gt;
+		&lt;/li&gt;
+		&lt;!-- slide --&gt;
+		
+		&lt;!-- slide --&gt;
+		&lt;li&gt;
+			&lt;img src=&quot;images/blog/lee-2.png&quot; alt=&quot;slide&quot;&gt;
+		&lt;/li&gt;
+		&lt;!-- slide --&gt;
+		
+		&lt;!-- slide --&gt;
+		&lt;li&gt;
+			&lt;img src=&quot;images/blog/lee.png&quot; alt=&quot;slide&quot;&gt;
+		&lt;/li&gt;
+		&lt;!-- slide --&gt;
+		
+	&lt;/ul&gt;
+	&lt;!-- .slides --&gt;
+&lt;/div&gt;
+&lt;!-- .flexslider --&gt;
+</pre>       
+			<p>You can customize flexslider with data attributes;</p>
+            <p><code>data-autoplay</code> autoplay slideshow : "true" or "false"</p>
+            <p><code>data-interval</code> slideshow image change interval(in ms) when autoplay is on.</p>
+            <p><code>data-animation</code> slide change animation  : "slide" or "fade"</p>
+            <p><code>data-direction</code> slide direction : "horizontal" or "vertical"</p>
+            <p><code>data-animationSpeed</code> slide change animation speed(in ms)</p>
+            <p><code>data-pauseOnHover</code> pause the slideshow when interacting with control elements : "true" or "false"</p>
+            
+        </div>
+        <!-- BLOG PAGE
+            ================================================== -->         
+        
+        
+        
+      </section>
+      <!-- HTML
+        ================================================== --> 
+      
+      <!-- CSS
+        ================================================== -->
+      <section id="css">
+        <div class="page-header">
+          <h1>CSS<small>style files used</small></h1>
+        </div>
+        <p class="lead">Here is a complete list of used css files in the theme and what thay stand for;</p>
+        <ul>
+          <li><strong>print.css :</strong> Print specific styles.</li>
+          <li><strong>normalize.css :</strong> <a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a> is an alternative to CSS resets. Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing. </li>
+          <li><strong>bootstrap.min.css :</strong> <a href="http://getbootstrap.com/" target="_blank">Bootstrap </a> is a powerful front-end framework and we only used the responsive grid system for our layout.</li>
+          <li><strong>animate.css :</strong> <a href="http://daneden.me/animate/" target="_blank">Animate.css </a> is a bunch of cool, fun, and cross-browser css3 animations. We are using it for page/portfolio details/lightbox transitions.</li>
+          <li><strong>font-awesome.min.css : </strong> <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a> includes styles for Font Awesome font icons.</li>
+          <li><strong>fontello.css : </strong>includes styles for fontello font icons.</li>
+          
+          <li><strong>google-code-prettify/prettify.css : </strong>style file fo the <a target="_blank" href="https://code.google.com/p/google-code-prettify/">google code prettify</a> script.</li>
+          <li><strong>uniform.default.css : </strong>style file fo the <a target="_blank" href="http://uniformjs.com/">Uniform</a> script.</li>
+          <li><strong>flexslider.css :</strong> style file of <a href="http://www.woothemes.com/flexslider/" target="_blank">FlexSlider</a> responsive slider script, used for post format gallery slider in blog.</li>
+          <li><strong>mediaelementplayer.css : </strong>style file fo the <a href="http://mediaelementjs.com" target="_blank">MediaElement.js</a> script file.</li>
+          <li><strong>tooltipster.css : </strong>style file fo the <a target="_blank" href="http://iamceege.github.io/tooltipster/">tooltipsetter</a> script.</li>
+          <li><strong>nprogress.css : </strong>style file fo the <a target="_blank" href="http://ricostacruz.com/nprogress/">nprogress</a> script file.</li>
+          <li><strong>jquery.fancybox-1.3.4.css :</strong> is the style file of <a href="http://fancybox.net/" target="_blank">Fancybox </a> jquery plugin, used for lightbox.</li>
+          <li><strong>style.css :</strong> wordpress specific styles (image alignments etc..). Since this template is intented to convert a wordpress theme soon, we used style.css</li>
+          <li><strong>main.css :</strong> is the main style file of the theme. Layout/font/color and other style declerations are in this file. Code blocks are grouped and commented.</li>
+        </ul>
+        
+        <h3>Included Fonts (Font icons)</h3>
+        <p>In this theme we have used font icons instead of png icons, because font icons are vector-scalable, ready for retina screens, saves bandwidth and easy to work with.</p>
+        <ul>
+          <li><strong>css/fonts/FontAwesome : </strong> <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">FontAwesome</a> is the general font icon set we used in this template.</li>
+          <li><strong>css/fonts/fontello : </strong> a custom set of icons from <a href="http://fontello.com/" target="_blank">Fontello.com</a>, mostly used for social icons.</li>
+        </ul>
+      </section>
+      <!-- CSS
+        ================================================== --> 
+      
+      <!-- JAVASCRIPT
+        ================================================== -->
+      <section id="javascript">
+        <div class="page-header">
+          <h1>Javascript<small>script files used</small></h1>
+        </div>
+         <p class="lead">We are using jquery (v1.10.2) as javascipt framework.</p>
+        <p>Here is a complete list of used script files in the template and what thay stand for;</p>
+        <ul>
+          <li><strong>jquery-1.10.2.min.js :</strong> <a href="http://jquery.com/" target="_blank">jQuery</a> is a fast and concise JavaScript Library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.</li>
+          <li><strong>jquery-migrate-1.2.1.min.js</strong> a <a target="_blank" href="https://github.com/jquery/jquery-migrate/">jQuery Migrate</a> is a plugin used to detect and restore APIs or features that have been deprecated in jQuery and removed as of version 1.9 </li>
+          <li><strong>modernizr.js :</strong> <a href="http://modernizr.com/" target="_blank">Modernizr</a> is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser. We are using it to proivde fallbacks for not supported browser. </li>
+          <li><strong>html5shiv.js :</strong> <a href="https://github.com/aFarkas/html5shiv" target="_blank">HTML5 Shiv </a> is the defacto way to enable use of HTML5 sectioning elements in legacy Internet Explorer.</li>
+          <li><strong>selectivizr-min.js : </strong> <a href="http://selectivizr.com/" target="_blank">selectivizr</a> is a JavaScript utility that emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8.</li>
+          <li><strong>respond.min.js :</strong> <a target="_blank" href="https://github.com/scottjehl/Respond">Respond</a> is a fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more) (Required for bootstrap's mobile-first approach grid to work on older IEs).</li>
+          <li><strong>jquery.address-1.5.min.js :</strong> <a href="http://www.asual.com/jquery/address/" target="_blank">jQuery Address </a> plugin provides powerful deep linking capabilities and allows the creation of unique virtual addresses that can point to a website section or an application state. </li>
+          <li><strong>smoothscroll.js :</strong> a script to provide smooth scroll on chrome.</li>
+          <li><strong>nprogress.js :</strong> <a target="_blank" href="http://ricostacruz.com/nprogress/">nprogress</a> is a nanoscopic progress bar. Featuring realistic trickle animations to convince your users that something is happening! </li>
+          <li><strong>fastclick.js :</strong> <a target="_blank" href="http://ftlabs.github.io/fastclick/">fastclick</a> is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a click event on mobile browsers.</li>
+     	  <li><strong>jquery.imagesloaded.min.js : </strong> <a href="http://desandro.github.com/imagesloaded/" target="_blank">imagesloaded</a> is a jQuery plugin that triggers a callback after all images have been loaded.</li>	
+          <li><strong>jquery.isotope.min.js :</strong> <a href="http://isotope.metafizzy.co/" target="_blank">Isotope</a> is an exquisite jQuery plugin for magical layouts. We used it to build portfolio layout and filtering. Also for gallery page layout.</li>
+          <li><strong>jquery.flexslider-min.js : </strong> <a href="http://www.woothemes.com/flexslider/" target="_blank">FlexSlider</a> is a responsive slider script, used for post format gallery slider in blog.</li>
+          <li><strong>jquery.fitvids.js :</strong> <a href="http://fitvidsjs.com/" target="_blank">fitvids.JS</a> is a lightweight, easy-to-use jQuery plugin for fluid width video embeds. We used it for responsive video embeeding.</li>
+          <li><strong>jquery.validate.min.js :</strong> <a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/" target="_blank">jQuery validate plugin</a> is a jQuery plugin makes simple client-side form validation. We used it for contact form client-side validation.</li>
+          <li><strong>jquery.uniform.min.js : </strong> <a href="https://github.com/pixelmatrix/uniform" target="_blank">jQuery Uniform</a> is a form style plugin, used for cross browser styled form elements.</li>
+          <li><strong>jquery.fancybox-1.3.4.pack.js :</strong> is the script file of <a href="http://fancybox.net/" target="_blank">Fancybox </a> jquery plugin, used for lightbox.</li>
+          <li><strong>jquery.tooltipster.min.js :</strong> <a target="_blank" href="http://iamceege.github.io/tooltipster/">Tooltipsetter</a> is a powerful, flexible jQuery plugin enabling you to easily create semantic, modern tooltips enhanced with the power of CSS. </li>
+          <li><strong>google-code-prettify : </strong> <a href="http://detectmobilebrowsers.com/" target="_blank">google-code-prettify</a> is a Javascript module and CSS file that allows syntax highlighting of source code snippets in an html page.</li>
+          <li><strong>twitterFetcher_v10_min.js :</strong> <a target="_blank" href="http://jasonmayes.com/projects/twitterApi/#sthash.FxV29APl.dpbs">Twitterfetcher</a> is a plugin to show your latest tweets. </li>
+          <li><strong>mediaelement-and-player.min.js : </strong> <a href="http://mediaelementjs.com" target="_blank">MediaElement.js</a> is a script that provides HTML5 audio and video players in pure HTML and CSS with flash/silverlight  fallbacks for non supported browsers.</li>
+          <li><strong>send-mail.js :</strong> is a simple script file written by us to send mail via contact form with ajax support.</li>
+          <li><strong>triple.layout.js :</strong> <a target="_blank" href="http://tympanus.net/codrops/2013/09/05/sliding-horizontal-layout/">Sliding Horizontal Layout</a> script used for layout. </li>
+          <li><strong class="highlight">main.js :</strong> This is the main script file of the theme. Plugin calls and other script works are done in this file with comments.</li> 
+        </ul>
+      </section>
+      <!-- JAVASCRIPT
+        ================================================== --> 
+      
+      <!-- CUSTOMIZATION
+        ================================================== -->
+      <section id="customization">
+        <div class="page-header">
+          <h1>Customization<small>how to customize the template to your needs.</small></h1>
+        </div>
+        <p class="lead">We designed this template for easy customization. You can customize the template easily to your needs in two general ways : Html Data Attributes / CSS Skins.</p>
+        
+        <!-- HTML DATA ATTR
+            ================================================== -->
+        <div id="html-data-attr" class="sub-section">
+          <div class="page-header">
+            <h2>Html Data Attributes</h2>
+          </div>
+          <p>Here is a list of custom data attributes you can use with <code>html</code> tag.</p>
+          <pre class="prettyprint linenums">&lt;html lang=&quot;en&quot; class=&quot;no-js one-page-layout&quot; data-classic-layout=&quot;false&quot; data-mobile-only-classic-layout=&quot;true&quot; data-inAnimation=&quot;fadeInUp&quot; data-outAnimation=&quot;fadeOutDownBig&quot;&gt;</pre>
+          
+          <ul>
+          	<li><code>data-classic-layout</code> : true/false : when true always fallbacks to classic layout, deactivates "Sliding Horizontal Layout" layout. Default value is <code>false</code>.</li>
+            <li><code>data-mobile-only-classic-layout</code> : true/false : when true always fallbacks to classic layout on mobile devices. Default value is <code>true</code>. Make it false if you want to try "Sliding Horizontal Layout" on mobile.</li>
+            <li><code>data-inAnimation</code> : Determines the animation type for ajax portfolio details page in animation; You can see a full list of supported animations live in <a href="http://daneden.me/animate/" target="_blank">animate.css</a>.</li>
+            <li><code>data-outAnimation</code> : Determines the animation type for ajax portfolio details page out animation; You can see a full list of supported animations live in <a href="http://daneden.me/animate/" target="_blank">animate.css</a>.</li>
+          </ul>
+          
+          <p> <strong>NOTE : </strong> Make sure you select any <strong>"in"</strong> animation for  <code>data-inAnimation</code> and <strong>"out"</strong> animation for <code>data-outAnimation</code> attributes. </p>
+          
+        </div>
+        <!-- HTML DATA ATTR
+            ================================================== --> 
+        
+       
+        <!-- CSS SKINS
+            ================================================== -->
+        <div id="css-skins" class="sub-section">
+          <div class="page-header">
+            <h2>CSS Skins</h2>
+          </div>
+          <p>This template has 3 predefined skins for quick customization. Skin files are located in <code>css/skins</code> folder.</p>
+          <pre class="prettyprint">
+  css/skins/
+  ├── flat.css
+  ├── overlay.css
+  └── overlay-bold.css
+</pre>
+		  <p>If you don't include any skin you will get the minimal style.</p>
+          <p>Add the selected skin style file just before the close bracket of <code>head</code> tag.</p>
+          
+          <pre class="prettyprint linenums">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/skins/flat.css&quot;&gt;</pre>
+          
+        </div>
+        <!-- CSS SKINS
+            ================================================== --> 
+        
+        <!-- CUSTOM CSS
+            ================================================== -->
+        <div id="custom-css" class="sub-section">
+          <div class="page-header">
+            <h2>Custom CSS</h2>
+          </div>
+          <p>While this template is designed for easily styling with predefined css skin files if you want to edit a specific section of the site, follow these steps; </p>
+          <p>First grab the element you want to style by inspecting element in your browser, right click the element and click <span class="highlight">Inspect Element</span>. If you don't know how, check out <a href="http://net.tutsplus.com/tutorials/tools-and-tips/chrome-dev-tools-markup-and-style/" target="_blank">this article</a>, once you are familiar with this approach you will find it extremely easy to edit/override current styles of an element.</p>
+          <p>Let's say you want to make active filter link item bolder in portfolio filtering. Grab the element by right click on it and click "Inspect Element", on the right pane of developer tool window we can see to code to grab the elemnent with css : <code>#filters .current a</code> Then do the following;</p>
+          <pre class="prettyprint linenums">#filters .current a { font-weight: bold; }</pre>
+          <p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight .</p>
+          <pre class="prettyprint linenums">#portfolio #filters .current a { font-weight: bold ; }</pre>
+          <p>And if your new style is not overriding, add <code>!important</code> at the end of style definition;</p>
+          <pre class="prettyprint linenums">#filters .current a { font-weight: bold !important; }</pre>
+          <p> <strong>NOTE : </strong> Add your custom css code after all style definitions in your <code>head</code> tag. </p>
+          <pre class="prettyprint linenums">&lt;style&gt;
+	#filters .current a { font-weight: bold !important; }
+&lt;/style&gt;</pre>
+			
+            <p>Here are some simple css code snippets to customize the essentials;</p>
+          
+          <p>Change classic layout nav menu active item text color and background color;</p>
+          <pre class="prettyprint linenums">
+/* Classic Layout Nav Active Item */
+.classic-layout .vs-nav li a:hover,
+.classic-layout .vs-nav li.current_page_item a {
+    color: #fff; background: #345;
+    }</pre>
+		   
+           <p>Change cover h3 span (yellow) titles text color;</p>
+          <pre class="prettyprint linenums">
+.cover h3 span { color: #FC0; }
+</pre>
+			
+            <p>Change link colors;</p>
+          <pre class="prettyprint linenums">
+/* Links */
+a { color: #096; }
+a:hover { color: #5BCF80; }</pre>
+			
+		  <p>Change text-selection color;</p>
+          <pre class="prettyprint linenums">
+/* Text Selection */
+::selection { text-shadow: none; color: #333; background: #FFFFCF; }
+::-moz-selection { text-shadow: none; color: #333; background: #FFFFCF; }</pre>
+            
+            <h3>Customizing colors</h3>
+            
+          <p>You will see "<strong>THEME</strong>" section at the end of the <code>main.css</code> file. You can easily customize primary/secondary color there.</p>
+          
+          <pre class="prettyprint linenums">
+/*  --------------------------------------------
+
+	8. THEME - customize colors etc...
+	
+    -------------------------------------------- */
+body {
+ 	color: #345;
+	}
+/* Links */
+a {
+ 	color: #096;
+	}
+a:hover {
+ 	color: #5BCF80;
+	}
+
+/* Text Selection */
+::selection {
+ 	text-shadow: none; color: #333; background: #FFFFCF;
+	}
+::-moz-selection {
+ 	text-shadow: none; color: #333; background: #FFFFCF;
+	}
+
+/* Service Icons */	
+.color1 i { 
+	background: #F8CB30; 
+	}
+.color2 i { 
+	background: #74BADE; 
+	}
+.color3 i { 
+	background: #5BCF80; 
+	}
+.color4 i { 
+	background: #E25E5B; 
+	}	
+	
+/* PRIMARY COLOR : #096
+   ================================================== */
+.navigation a:hover,
+.pagination a:hover,
+.entry-meta a:hover,
+.single-page-layout .vs-nav li i:hover,
+.media-box .mask:before,
+.button.primary:hover,
+a.more-link:hover,
+.flex-control-paging li a.flex-active,
+.mejs-controls .mejs-time-rail .mejs-time-current,
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+ 	background: #096
+	}
+.entry-title a:hover,
+.portfolio-nav a.button:hover,
+.related-posts li a:hover,
+.nav-single a:hover,
+.comment-meta a:hover, 
+.comment-meta .fn + a:hover, 
+.comment-reply-link:hover {
+ 	color: #096
+	}
+.portfolio-nav a.button:hover,
+.format-link .link-content > a:first-child:hover,
+.flex-control-paging li a:hover,
+.bypostauthor > article {
+	border-color: #096
+	}
+	
+/* SECONDARY COLOR : #5BCF80 - lighter than primary color
+   ================================================== */	
+.skill-unit .bar .progress,
+.event .date,
+.letter-info p i,
+.media-cell-desc .date,
+#nprogress .bar,
+#fancybox-close,
+.portfolio-nav a.button.back {
+	background: #5BCF80;
+	}
+#nprogress .spinner-icon {
+  border-top-color: #5BCF80; border-left-color: #5BCF80;
+	}
+</pre>
+            
+        </div>
+        <!-- CUSTOM CSS
+            ================================================== --> 
+        
+        <!-- FONTS
+            ================================================== -->
+        <div id="fonts" class="sub-section">
+          <div class="page-header">
+            <h2>Fonts</h2>
+          </div>
+          <h3>Fonts by <a target="_new" href="http://www.google.com/webfonts">Google Webfonts</a></h3>
+          <p>We included the fonts in this template from <a target="_blank" href="http://www.google.com/webfonts">Google Webfonts</a> which uses font-face technique for font embeeding.</p>
+          <p>Font declerations are at the head section;</p>
+          <pre class="prettyprint linenums">&lt;!-- FONTS --&gt;
+&lt;link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'&gt;
+&lt;link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'&gt;
+&lt;link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'&gt;
+</pre>
+          <h3>Changing Fonts</h3>
+          <p>To change fonts, just go to <a target="_new" href="http://www.google.com/webfonts">Google Webfonts</a> site, search and select a new font, click <b>"Quick use"</b> link, then copy the stylesheet code from <b> Add this code to your website: / Standart</b> section and paste the code into <code>head</code> section. Then change the font family name in <b>main.css</b> starting from <b>line:376</b>. These font definitions in main.css are the only font definitions for the entire theme, once you have changed font-family in these lines, you are done!</p>
+          <pre class="prettyprint linenums">/* BODY */
+body,
+input,
+textarea,
+select,
+button {
+ 	font-family: Lato, Arial, serif
+	}</pre>
+        </div>
+        <!-- FONTS
+            ================================================== --> 
+        
+      </section>
+      <!-- CUSTOMIZATION
+        ================================================== --> 
+      
+      <!-- CREDITS
+        ================================================== -->
+      <section id="credits">
+        <div class="page-header">
+          <h1>Credits<small>thanks to the creators of this great files</small></h1>
+        </div>
+        <ul>
+            <li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+            <li><a target="_blank" href="https://github.com/jquery/jquery-migrate/">jQuery Migrate</a></li>
+            <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li><a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a></li>
+            <li><a href="http://daneden.me/animate/" target="_blank">Animate.css</a></li>
+            <li><a target="_blank" href="http://tympanus.net/codrops/2013/09/05/sliding-horizontal-layout/">Sliding Horizontal Layout by codrops</a></li>
+            <li><a href="http://ricostacruz.com/nprogress/" target="_blank">NProgress.js</a></li>
+            <li><a href="http://fontello.com/" target="_blank">Fontello</a></li>
+            <li><a href="http://uniformjs.com/" target="_blank">Uniform</a></li>
+            <li><a href="http://www.woothemes.com/flexslider/" target="_blank">FlexSlider</a></li>
+            <li><a href="http://mediaelementjs.com" target="_blank">MediaElement.js</a></li>
+            <li><a href="http://iamceege.github.io/tooltipster/" target="_blank">tooltipsetter</a></li>
+            <li><a target="_blank" href="http://ftlabs.github.io/fastclick/">fastclick</a></li>
+            <li><a href="http://detectmobilebrowsers.com/" target="_blank">google-code-prettify</a></li>
+            <li><a target="_blank" href="http://jasonmayes.com/projects/twitterApi/#sthash.FxV29APl.dpbs">Twitterfetcher</a></li>
+            <li><a href="http://tympanus.net/codrops/2012/04/17/rotating-words-with-css-animations/" target="_blank">CSS3 Rotating Words by codrops</a></li>
+            <li><a href="http://fancybox.net/" target="_blank">Fancybox</a></li>
+            <li><a href="http://www.asual.com/jquery/address/" target="_blank">jQuery Address plugin</a></li>
+            <li><a href="http://modernizr.com/" target="_blank">Modernizr</a></li>
+            <li><a href="http://isotope.metafizzy.co/" target="_blank">Isotope</a></li>
+            <li><a href="http://fitvidsjs.com/" target="_blank">fitvids.JS</a></li>
+            <li><a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/" target="_blank">jQuery validate plugin</a></li>
+            <li><a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a></li>
+            <li><a href="https://github.com/aFarkas/html5shiv" target="_blank">HTML5 Shiv</a></li>
+            <li><a href="http://selectivizr.com/" target="_blank">selectvizr</a></li>
+            <li><a target="_blank" href="https://github.com/scottjehl/Respond">Respond</a></li>
+            <li><a href="http://jasonmayes.com/projects/twitterApi/" target="_blank">twitterFetcher</a></li>
+            <li><a href="https://github.com/desandro/imagesloaded" target="_blank">imagesloaded</a></li>
+            <li><a href="http://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a></li>
+            <li><a target="_new" href="http://www.google.com/webfonts">Google Webfonts</a></li>
+        </ul>
+      </section>
+      <!-- CREDITS
+        ================================================== --> 
+      
+    </div>
+    <!-- CONTENT --> 
+  </div>
+  <!-- ROW --> 
+</div>
+<!-- CONTAINER --> 
+
+<!-- Footer
+    ================================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+        <p><a href="#">Back to top</a></p>
+        <ul class="footer-links">
+          <li><a href="http://www.pixelwars.org/forums/" target="_blank">Support Forums</a></li>
+          <li><a href="http://themeforest.net/user/pixelwars/portfolio" target="_blank">More themes from pixelwars</a></li>
+        </ul>
+        <p>built with <a href="http://twitter.github.com/bootstrap/" target="_blank">twitter bootstrap</a>.</p>
+        <p>&copy;2012 Pixelwars</p>
+        <p><img src="assets/img/pixelwars-logo.png" alt="pixelwars logo"></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer
+    ================================================== --> 
+
+<!-- javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-transition.js"></script> 
+<script src="assets/js/bootstrap-alert.js"></script> 
+<script src="assets/js/bootstrap-modal.js"></script> 
+<script src="assets/js/bootstrap-dropdown.js"></script> 
+<script src="assets/js/bootstrap-scrollspy.js"></script> 
+<script src="assets/js/bootstrap-tab.js"></script> 
+<script src="assets/js/bootstrap-tooltip.js"></script> 
+<script src="assets/js/bootstrap-popover.js"></script> 
+<script src="assets/js/bootstrap-button.js"></script> 
+<script src="assets/js/bootstrap-collapse.js"></script> 
+<script src="assets/js/bootstrap-carousel.js"></script> 
+<script src="assets/js/bootstrap-typeahead.js"></script> 
+<script src="assets/js/bootstrap-affix.js"></script> 
+<script src="assets/js/application.js"></script>
+</body>
+</html>
