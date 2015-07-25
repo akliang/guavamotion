@@ -5,5 +5,5 @@ Guava Motion sensor project
 Contains:
 - Arduino firmware files
 - MATLAB processing files
+- Experimental data
 
-Put data, logging, notes, thoughts, and updates into the Google doc
