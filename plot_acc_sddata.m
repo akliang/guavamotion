@@ -1,7 +1,9 @@
 
-set(0,'DefaultTextInterpreter','none');
+function plot_acc_sddata(fname)
 
-fname='/Users/moonbeam/Desktop/g_test/2g_64ms_throw.TXT';
+%set(0,'DefaultTeploxtInterpreter','none');
+
+%fname='/Users/moonbeam/Desktop/g_test/2g_64ms_throw.TXT';
 [p f e]=fileparts(fname);
 
 q=load(fname);
@@ -14,13 +16,13 @@ c.y=5;
 c.z=6;
 
 fh=subplot(4,1,1)
-plot(q(:,c.milli),q(:,c.x))
+plot(q(:,c.milli),q(:,c.x),'o--')
 title(sprintf('%s\nwalking straight line\nx accel',fname))
 subplot(4,1,2)
-plot(q(:,c.milli),q(:,c.y))
+plot(q(:,c.milli),q(:,c.y),'o--')
 title('y accel')
 subplot(4,1,3)
-plot(q(:,c.milli),q(:,c.z))
+plot(q(:,c.milli),q(:,c.z),'o--')
 title('z accel');
 xlabel('time (ms)')
 subplot(4,1,4)
@@ -31,3 +33,5 @@ ylabel('count');
 
 
 print([f '.png'],'-dpng');
+
+end
