@@ -1,9 +1,9 @@
 
 #include <Wire.h>
-#include <Time.h>
 #include "BMA250.h"
 #include "DSRTCLib.h"
 #include <SD.h>
+#include <SPI.h>
 
 // Initialize shields
 BMA250 accel;
